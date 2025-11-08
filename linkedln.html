@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Snehal Pathare | Full Stack Java Developer</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: #f8fafc;
+      color: #333;
+    }
+
+    /* Navbar */
+    nav {
+      background: #1a73e8;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav h2 {
+      font-size: 1.4rem;
+      font-weight: 600;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 25px;
+      list-style: none;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #ffe082;
+    }
+
+    /* Hero Section */
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+      background: linear-gradient(135deg, #1a73e8, #4285f4);
+      color: white;
+      animation: fadeIn 1s ease-in;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      margin-bottom: 25px;
+    }
+
+    .btn {
+      background: #ffe082;
+      color: #1a73e8;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 25px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: white;
+      color: #1a73e8;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    section h2 {
+      color: #1a73e8;
+      margin-bottom: 15px;
+      border-left: 4px solid #1a73e8;
+      padding-left: 10px;
+    }
+
+    .skills, .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .skill-box, .project-box {
+      background: #f1f3f6;
+      padding: 20px;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .skill-box:hover, .project-box:hover {
+      transform: translateY(-5px);
+      background: #e8f0fe;
+    }
+
+    .contact {
+      text-align: center;
+    }
+
+    .contact a {
+      display: inline-block;
+      margin: 10px;
+      color: #1a73e8;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    .contact a:hover {
+      color: #0b5394;
+    }
+
+    footer {
+      text-align: center;
+      background: #1a73e8;
+      color: white;
+      padding: 20px;
+      margin-top: 40px;
+      font-size: 0.9rem;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Mobile Menu */
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+      }
+
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+      }
+
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      section {
+        margin: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav>
+    <h2>Snehal Pathare</h2>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>👋 Hi, I’m Snehal Pathare</h1>
+    <p>🚀 Full Stack Java Developer in Training | Java | SQL | HTML | CSS | Future-Ready Technologist</p>
+    <a href="Snehal Pathare R.pdf" class="btn" download>📄 Download Resume</a>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I’m a passionate learner currently pursuing a <b>Full Stack Java Developer course</b>.
+      My journey focuses on mastering <b>Java, SQL, HTML, CSS</b>, and building efficient web solutions.
+      I enjoy problem-solving, designing user-friendly interfaces, and learning new technologies every day.
+    </p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="skill-box"><b>Frontend:</b> HTML5, CSS3, JavaScript (Basics)</div>
+      <div class="skill-box"><b>Backend:</b> Java (Core )</div>
+      <div class="skill-box"><b>Database:</b> SQL</div>
+      <div class="skill-box"><b>Tools:</b> Eclipse, VS Code, GitHub</div>
+      <div class="skill-box"><b>Soft Skills:</b> Problem Solving, Teamwork, Continuous Learning</div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project-box">
+        <h3>📘 Fake Medicament Detection Using QR code In Blockchain </h3>
+        <p>
+          This project focuses on solving the problem of counterfeit medicines using QR codes and blockchain technology.
+          Each medicine is given a unique ID and a QR code, which are stored on the blockchain for security and transparency.
+          The system ensures fast verification, high accuracy, and helps build trust between manufacturers, pharmacies, and consumers.
+          It is user-friendly and can be integrated into the entire healthcare supply chain in the future.
+        </p>
+      </div>
+      <div class="project-box">
+        <h3>🌐 Personal Portfolio Website (HTML + CSS)</h3>
+        <p>
+          Designed and deployed a responsive website to showcase my projects and technical skills using HTML and CSS.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p>📩 <b>Email:</b> patharesnehal20@gmail.com</p>
+    <a href="https://github.com/SnehalPathare02" target="_blank">💻 GitHub</a>
+    <a href="https://www.linkedin.com/in/snehal-pathare-1552aa2a3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">🔗 LinkedIn</a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Snehal Pathare | Designed with ❤️ using HTML, CSS & JavaScript</p>
+  </footer>
+</body>
+</html>
